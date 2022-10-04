@@ -13,8 +13,8 @@ for (let conteo = 1; conteo <= 3; conteo++) {
     }
 }
 
-let bebidas = parseInt(prompt ("Ingresá la cantidad de bebidas que vas a querer ordenar"));
-let comidas = parseInt(prompt ("Ingresá la cantidad de comidas que vas a querer ordenar"));
+let bebidas = parseInt(prompt ("Ingresá la cantidad de bebidas que vas a querer ordenar(solo números)"));
+let comidas = parseInt(prompt ("Ingresá la cantidad de comidas que vas a querer ordenar(solo números)"));
 
 function sumar (){
     let resultado = bebidas + comidas;
