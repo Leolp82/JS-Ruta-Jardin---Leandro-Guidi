@@ -6,19 +6,18 @@ for (let conteo = 1; conteo <= 3; conteo++) {
         alert("Bienvenido al Ruta Jardín " + user + "!!!")
         break;
     } else {
-        alert("Usuario y/o contraseña incorrecta, volvé a intentar. Te quedan " + (3-conteo) + " intentos");
+        alert("Usuario y/o contraseña incorrecta, volvé a intentar. Te quedan " + (3 - conteo) + " intentos");
     }
-    if (3-conteo==0){
+    if (3 - conteo == 0) {
         alert("Ponete en contacto con el administrador. Tu cuenta ha sido bloqueada");
     }
 }
-
-let bebidas = parseInt(prompt ("Ingresá la cantidad de bebidas que vas a querer ordenar(solo números)"));
-let comidas = parseInt(prompt ("Ingresá la cantidad de comidas que vas a querer ordenar(solo números)"));
-
-function sumar (){
-    let resultado = bebidas + comidas;
-    alert("El total de bebidas más comidas es = "+resultado);
+let resultado = 0;
+function sumar(cantBebidas, cantComidas) {
+    resultado = cantBebidas + cantComidas;
 }
-
-sumar();
+function mostrar(mensaje) {
+    alert("El pedido consta de: " + resultado + " comidas más bebidas.");
+}
+sumar(parseInt(prompt("Ingresá la cantidad de bebidas que vas a querer ordenar (solo números)")), parseInt(prompt("Ingresá la cantidad de comidas que vas a querer ordenar (solo números)")));
+mostrar(resultado);
